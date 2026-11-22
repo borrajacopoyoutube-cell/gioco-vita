@@ -1,0 +1,5 @@
+# Cartelle generate da Godot: non vanno su GitHub
+.godot/
+.import/
+export_presets.cfg
+*.tmp
