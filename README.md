@@ -1,19 +1,25 @@
 # Gioco Vita
 
-Un gioco-app fatto con Godot 4 per organizzare la vita: le cose da fare diventano **missioni**, completarle dà **XP** e fa salire di **livello**.
+Un gioco per PC fatto con Godot 4 per organizzare la vita. Le tue chat con Claude abitano in un villaggio: ognuna ha la sua casa, parlano tra loro e con te in modo giocoso.
+
+## Fase attuale: scegliere il villaggio
+Ci sono 4 proposte di villaggio, tutte disegnate via codice (nessuna immagine esterna):
+
+1. **Borgo del Bosco**: casette di legno, pini, fontana in piazza
+2. **Porto Azzurro**: casette bianche sul mare, faro, molo e barche
+3. **Funghinia**: case a fungo, cristalli magici, lucciole
+4. **Neo Borgo**: villaggio futuristico di notte, torri al neon e ologramma
+
+Le anteprime sono nella cartella `anteprime/`.
 
 ## Come aprirlo
-1. Apri Godot 4.
+1. Apri Godot 4 (versione 4.3 o successiva).
 2. Clicca **Importa** e scegli il file `project.godot` in questa cartella.
-3. Premi **F5** per avviare il gioco.
-
-## Cosa fa (versione 0.1)
-- Aggiungi missioni con una categoria: Salute, Lavoro, Casa, Studio.
-- Spunta una missione per completarla: +10 XP.
-- Ogni 100 XP sali di livello.
-- I progressi vengono salvati automaticamente.
+3. Premi **F5**. Con le frecce o i tasti 1-4 cambi villaggio.
 
 ## Struttura
-- `project.godot`: configurazione del progetto
-- `scenes/main.tscn`: scena principale
-- `scripts/main.gd`: logica del gioco e interfaccia
+- `villaggi/villaggio_base.gd`: strumenti di disegno comuni (case, alberi, fumetti...)
+- `villaggi/villaggio_*.gd` / `.tscn`: i 4 villaggi
+- `scenes/villaggi.tscn` + `scripts/villaggi.gd`: schermata per sfogliarli
+- `tools/cattura.tscn`: salva un'immagine PNG di ogni villaggio
+- `scenes/main.tscn` + `scripts/main.gd`: il primo prototipo (lista missioni con XP)
