@@ -7,7 +7,7 @@ Tutto è generato via codice, senza modelli esterni:
 - mura ottagonali con torri e porta d'ingresso
 - chiesa con campanile e rosone
 - piazza del mercato con pozzo, bancarelle e abitanti
-- case a graticcio per le chat, ognuna con insegna e fumetto
+- 6 case a graticcio per le chat, ognuna con insegna, fumetto e giardino recintato (vialetto, aiuole, orto, alberello da frutto, panchina)
 - campi coltivati, mulino a vento, boschi, colline e montagne innevate
 
 Per cambiare nomi, frasi o posizioni delle chat modifica l'elenco `CHAT` in `borgo/borgo3d.gd`.
